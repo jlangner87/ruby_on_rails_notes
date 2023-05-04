@@ -29,30 +29,30 @@
 
 ### App Directory
 
-#### assets _stores static assets_
+#### assets _(stores static assets)_
 
 - config
   - .keep
 - images
-- stylesheets _stores css/scss stylesheets_
-  - application.css _manifest file that is available to all application views_
+- stylesheets _(stores css/scss stylesheets)_
+  - application.css _(manifest file that is available to all application views)_
 
-#### channels _makes realtime communication available to the application_
+#### channels _(makes realtime communication available to the application)_
 
 - channel.rb
 - connection.rb
 
-#### controllers _where all additional controllers will be stored_
+#### controllers _(where all additional controllers will be stored)_
 
 - concerns
   - .keep
-- application_controller.rb _default functionality_
+- application*controller.rb *(default functionality)\_
 
-#### helpers _helper methods used in views templates_
+#### helpers _(helper methods used in views templates)_
 
 - application_helper.rb
 
-#### javascript _makes JavaScript available to the application_
+#### javascript _(makes JavaScript available to the application)_
 
 - controllers
   - application.js
@@ -67,7 +67,7 @@
 
 - application_mailers.rb
 
-#### models _where models are stored_
+#### models _(where models are stored)_
 
 - concerns
   - .keep
@@ -75,8 +75,10 @@
 
 #### views
 
-- layouts _all views are served from this directory_
+- layouts _(all views are served from this directory)_
   - application.html.erb
+- mailer.html.erb
+- mailer.text.erb
 
 ### Bin Directory
 
