@@ -27,15 +27,19 @@
 
 ## Rails App Structure
 
-### App Directory
+### App
 
 #### assets _(stores static assets)_
 
-- config
-  - .keep
-- images
-- stylesheets _(stores css/scss stylesheets)_
-  - application.css _(manifest file that is available to all application views)_
+##### config
+
+- .keep
+
+##### images
+
+##### stylesheets _(stores css/scss stylesheets)_
+
+- application.css _(manifest file that is available to all application views)_
 
 #### channels _(makes realtime communication available to the application)_
 
@@ -44,8 +48,9 @@
 
 #### controllers _(where all additional controllers will be stored)_
 
-- concerns
-  - .keep
+##### concerns
+
+- .keep
 - application*controller.rb *(default functionality)\_
 
 #### helpers _(helper methods used in views templates)_
@@ -69,18 +74,95 @@
 
 #### models _(where models are stored)_
 
-- concerns
-  - .keep
+##### concerns
+
+- .keep
 - application_record.rb
 
-#### views
+#### views _(all views are served from this directory)_
 
-- layouts _(all views are served from this directory)_
-  - application.html.erb
+##### layouts
+
+- application.html.erb
+
 - mailer.html.erb
 - mailer.text.erb
 
-### Bin Directory
+### Bin
+
+- bundle
+- importmap
+- rails
+- rake
+- setup
+
+### Config
+
+#### environments
+
+- development.rb
+- production.rb
+- test.rb
+
+#### initializers
+
+- assets.rb
+- content_security_policy.rb
+- filter_parameter_logging.rb
+- inflections.rb
+- permissions_policy.rb
+
+#### locales
+
+- en.yml
+
+- application.rb
+- boot.rb
+- cable.yml
+- environment.rb
+- importmap.rb
+- mastery.key
+- puma.rb
+- routes.rb
+- storage.yml
+
+### DB
+
+#### development.sqlite3
+
+#### seeds.rb
+
+### Lib
+
+#### assets
+
+- .keep
+
+#### tasks
+
+- .keep
+
+### Log
+
+#### .keep
+
+#### .development.log
+
+### Public
+
+#### 404.html
+
+#### 422.html
+
+#### 500.html
+
+### Storage
+
+### Test
+
+### Tmp
+
+### Vendor
 
 ## Generate a Model
 
