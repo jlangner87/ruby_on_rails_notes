@@ -17,11 +17,32 @@
 
 ## MVC Overview
 
-### Model
+- It is a separation of the presentation layer and the backend layer
 
-### View
+1. Presentation Layer (what the user sees when interacting with the application)
+2. Backend Layer (All of the logic code for operating the application)
 
-### Controller
+### Model Overview
+
+1. Resources within the application
+   - examples: posts, comments, users, listings, etc...
+2. Will generally access a database
+   - Sqlite is the default database with Rails
+
+### View Overview
+
+1. Makes up the front-end or presentation layer of the application
+2. Shares data with controllers
+   - The app/views directory has a subdirectory for each controller
+3. Operates in standard web templates (HTML, CSS, JavaScript)
+   - Ruby is embedded into the HTML file as an extension "action_name.html.erb"
+   - Embedded Ruby is done with the HTML tag <%= ... %>
+
+### Controller Overview
+
+1. The backend brains/logic of the application
+   - examples: users_controller, listings_controller, pages_controller
+2. Determines how user requests are handled and returned to the user via views
 
 ![](mcv-infograph.png)
 
