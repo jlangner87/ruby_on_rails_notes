@@ -17,7 +17,7 @@
 
 ## MVC Overview
 
-- It is a separation of the presentation layer and the backend layer
+It is a separation of the presentation layer and the backend layer
 
 1. Presentation Layer (what the user sees when interacting with the application)
 2. Backend Layer (All of the logic code for operating the application)
@@ -185,8 +185,39 @@
 
 ### Vendor
 
-## Generate a Model
+## Basics of MCV Usage
 
-## Generate a Controller
+### Generate a Controller
 
-## Declaring Routes
+### Creating New Actions
+
+### Creating a new View
+
+### Defining the Root Route
+
+### Creating Additional Pages (putting it all together)
+
+## Databases in Ruby on Rails
+
+### Database Layer
+
+### Relational Databases
+
+![](./relational_dbs.png)
+
+### Operations of the Database
+
+- Create (add rows)
+- Read (display existing rows)
+- Update (modify existing rows)
+- Delete (remove existing rows)
+
+### Query Interface
+
+- SQL (Structured Query Interface)
+- Active Record
+  - ORM (Object Relational Mapper)
+    - Communicates between Rails Application and Database
+    - Translates Ruby Code into SQL queries
+    - Location: models > application_record.rb
+      - ApplicationRecord inherits functionality from ActiveRecord
